@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    padding: 7rem;
+    font-size: 2rem;
+    text-align: center;
+    background-color: aqua;
+}
+
+section {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+section div {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+section div article {
+    width: 49%;
+}
+
+section div article,
+section aside {
+    padding: 10rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+article:nth-of-type(1) {
+    background-color: aquamarine;
+}
+
+article:nth-of-type(2) {
+    background-color: rgb(243, 192, 63);
+}
+
+article:nth-of-type(3) {
+    background-color: rgb(212, 127, 255);
+}
+
+article:nth-of-type(4) {
+    background-color: rgb(67, 161, 130);
+}
+
+section aside {
+    width: 30%;
+    background-color: rgb(138, 72, 199);
+}
+
+footer {
+    padding: 7rem;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+    background-color: rgb(39, 82, 82);
+}
+
+@media only screen and (max-width: 768px) {
+    section {
+        flex-direction: column-reverse;
+    }
+
+    section div {
+        width: 100%;
+    }
+
+    section aside {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    section {
+        flex-direction: column-reverse;
+    }
+
+    section div {
+        width: 100%;
+    }
+
+    section aside {
+        width: 100%;
+    }
+
+    section div article {
+        width: 100%;
+        flex-direction: column;
+    }
+}
